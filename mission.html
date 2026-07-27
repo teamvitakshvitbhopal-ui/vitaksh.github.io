@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <title>ViTAKSH | Mission</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js Included -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    
+</head>
+<body class="static-page">
+
+    <div id="loader-screen">INITIALIZING TELEMETRY...</div>
+
+    <nav class="top-bar">
+        <div class="logo"><a href="index.html">ViTAKSH.</a></div>
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="index.html">Home</a></li>
+            <hr>
+            <li><a href="mission.html">Mission & Journey</a></li>
+            <li><a href="team.html">Meet The Team</a></li>
+            <hr>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- 3D Canvas Background -->
+    <div id="canvas-container"></div>
+
+    <!-- PROJECTS & RESEARCH (Moved from Home Page) -->
+    <div class="content-section" style="padding-top: 150px;">
+        <div class="bg-number" style="top: 15%; right: 5%; position: absolute;">01</div>
+        <h1 class="section-title" style="font-size: 4rem;">Projects & Research</h1>
+        <h2 class="section-subtitle" style="text-align: left; margin-bottom: 20px;"><span>High Altitude Balloon Satellite (HABSAT)</span></h2>
+        <p style="margin-bottom: 40px; color: var(--text-dim); max-width: 800px; font-size: 1.1rem; line-height: 1.6;">The HABSAT mission was developed to conduct atmospheric profiling and near-space experimentation using a high-altitude balloon platform.</p>
+        
+        <div class="team-grid">
+            <div class="content-card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Mission Objectives</h3>
+                <ul class="custom-list">
+                    <li>Measure atmospheric parameters</li>
+                    <li>Capture high-altitude imagery</li>
+                    <li>Demonstrate real-time telemetry</li>
+                    <li>Validate onboard avionics</li>
+                    <li>Test payload recovery systems</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Payload Features</h3>
+                <ul class="custom-list">
+                    <li>Environmental Sensors</li>
+                    <li>GPS Tracking & IMU</li>
+                    <li>ESP32-based distributed computing</li>
+                    <li>Raspberry Pi onboard processing</li>
+                    <li>LoRa Communication & Camera System</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Current Research Domains</h3>
+                <ul class="custom-list">
+                    <li>Satellite Systems (CubeSat, HABSAT)</li>
+                    <li>Communication & Ground Station</li>
+                    <li>Avionics & Embedded Systems</li>
+                    <li>Atmospheric Science & Flight Software</li>
+                    <li>Artificial Intelligence & Autonomous Systems</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h1 class="section-title">Our Journey</h1>
+        <div class="team-grid">
+            <div class="content-card">
+                <h4 style="color: var(--accent-green);">VITAKSH 1.0</h4>
+                <p>The foundation of Team VITAKSH was laid with a vision to introduce students to practical aerospace engineering and collaborative innovation.</p>
+            </div>
+            <div class="content-card">
+                <h4 style="color: var(--accent-green);">VITAKSH 2.0</h4>
+                <p>We successfully designed, built, and launched a High Altitude Balloon Satellite (HABSAT) carrying scientific payloads for atmospheric data collection and near-space experimentation.</p>
+            </div>
+            <div class="content-card">
+                <h4 style="color: var(--accent-green);">VITAKSH 3.0</h4>
+                <p>We are excited to begin our next major projects: the development of a Ground Station and a CanSat. These projects will strengthen our expertise in satellite communication and mission operations.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViTAKSH | Engineering Tomorrow, Beyond the Sky</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js Included -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    
+</head>
+<body>
+
+    <div id="loader-screen">INITIALIZING TELEMETRY...</div>
+
+    <nav class="top-bar">
+        <div class="logo"><a href="index.html">ViTAKSH.</a></div>
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="index.html">Home</a></li>
+            <hr>
+            <li><a href="mission.html">Mission & Journey</a></li>
+            <li><a href="team.html">Meet The Team</a></li>
+            <hr>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- 3D Canvas Background -->
+    <div id="canvas-container"></div>
+
+    <!-- HERO SECTION -->
+    <div class="hero-container" id="home">
+        <div class="hero-bg-number">01</div>
+        <div class="hero-content">
+            
+            <div class="hero-left">
+                <h1>ViTAKSH</h1>
+                
+                <p class="subheading" style="margin-bottom: 20px;">Engineering Tomorrow,<br>Beyond the Sky</p>
+                
+                <!-- MOVED PARAGRAPH -->
+                <p style="max-width: 550px; font-size: 1rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 40px;">
+                    Team VITAKSH is the official student satellite and near-space research team of VIT Bhopal University. We are a multidisciplinary team of passionate engineers dedicated to designing, developing, and deploying innovative aerospace systems. From high-altitude balloon satellite missions to ground station, we strive to bridge classroom knowledge with real-world engineering while fostering research, innovation, and teamwork.
+                </p>
+                
+                <div class="hero-data-points">
+                    <div><strong>01</strong> Voyager 2 Class<br>Deep Space Comm</div>
+                    <div><strong>02</strong> Heliosphere Edge<br>Telemetry Arrays</div>
+                </div>
+            </div>
+            
+            <!-- Right Column now only holds the quote and link -->
+            <div class="hero-right" style="max-width: 350px;">
+                <p style="color: var(--accent-green); font-style: italic; margin-bottom: 25px; font-weight: 500; font-size: 1.1rem; line-height: 1.6;">
+                    "Innovating Beyond Boundaries. Reaching Beyond Earth."
+                </p>
+                
+                <a href="mission.html" class="read-more">READ MORE</a>
+            </div>
+
+        </div>
+        <div class="scroll-down-indicator">SCROLL DOWN</div>
+    </div>
+
+    <!-- WHO WE ARE -->
+    <div class="content-section" style="padding-top: 50px;">
+        <div class="bg-number" style="top: 15%; right: 5%; left: auto; position: absolute;">02</div>
+        <h1 class="section-title">Who We Are</h1>
+        <div class="goal-content">
+            <div style="flex: 1;">
+                <p>Team VITAKSH is a student-led aerospace research team committed to advancing space technology through hands-on engineering projects. Our mission is to inspire innovation by designing and developing satellite systems, high-altitude balloon payloads, avionics, communication systems, and ground station technologies.</p>
+                <br>
+                <p>The team brings together students from various engineering disciplines who collaborate to solve complex engineering challenges while contributing to India's growing space ecosystem.</p>
+            </div>
+        </div>
+
+        <div class="team-grid" style="margin-top: 60px;">
+            <div class="content-card">
+                <h3>Vision</h3>
+                <p>To become a nationally recognized student aerospace research team that empowers future engineers through innovation, research, and space technology.</p>
+            </div>
+            <div class="content-card">
+                <h3>Mission</h3>
+                <ul class="custom-list">
+                    <li>Design and develop reliable aerospace systems.</li>
+                    <li>Promote research and innovation among students.</li>
+                    <li>Build industry-ready engineering skills through practical projects.</li>
+                    <li>Represent the university in national and international level competitions.</li>
+                    <li>Contribute towards India's expanding space ecosystem.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="content-section" style="min-height: auto; padding-bottom: 100px;">
+        <h2 class="section-subtitle" style="text-align: left;"><span>Achievements</span></h2>
+        <ul class="custom-list" style="max-width: 800px; font-size: 1.1rem; margin-bottom: 60px;">
+            <li>We successfully launched the HABSAT mission.</li>
+            <li>We designed an indigenous atmospheric payload.</li>
+            <li>We developed an in-house telemetry and communication system.</li>
+            <li>We participated in national aerospace competitions.</li>
+            <li>We built a multidisciplinary engineering team.</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
