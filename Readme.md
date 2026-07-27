@@ -42,7 +42,7 @@ ViTAKSH-Website/
 ├── script.js            # Global JS (Drawer toggle logic & Three.js rendering loop)
 │
 └── Hubble-1.glb         # 3D GLTF/GLB Binary model for the background
-
+```
 ## 🛠️ Prerequisites & Installation
 
 ⚠️ **IMPORTANT:** Because this project uses `GLTFLoader` to fetch an external 3D model (`Hubble-1.glb`), running the HTML files directly from your local file system (`file:///C:/...`) will result in a **CORS (Cross-Origin Resource Sharing) error**, and the 3D model will fail to load.
