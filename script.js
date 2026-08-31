@@ -1,4 +1,4 @@
-// --- SIDEBAR TOGGLE LOGIC ---
+
 const menuBtn = document.getElementById('menu-btn');
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('sidebar-overlay');
@@ -12,7 +12,7 @@ function toggleSidebar() {
 menuBtn.addEventListener('click', toggleSidebar);
 overlay.addEventListener('click', toggleSidebar);
 
-// --- THREE.JS LOGIC (Only runs on Home Page) ---
+
 const container = document.getElementById('canvas-container');
 
 if (container) {
@@ -33,7 +33,7 @@ if (container) {
     sunLight.position.set(10, 20, 10);
     scene.add(sunLight);
 
-    const blueRimLight = new THREE.DirectionalLight(0x4466ff, 1.5);
+    const blueRimLight = new THREE.DirectionalLight(0xffffff, 1.0); /* Updated to electric cyan */
     blueRimLight.position.set(-15, -10, -15);
     scene.add(blueRimLight);
 
@@ -42,8 +42,8 @@ if (container) {
 
     loader.load('Hubble-1.glb', function(gltf) {
         hubble = gltf.scene;
-        hubble.scale.set(0.9, 0.9, 0.9); 
-        hubble.position.set(5, 10, 2);
+        hubble.scale.set(0.8, 0.8, 0.7); 
+        hubble.position.set(5, 9, 2);
         
         hubble.traverse((child) => {
             if (child.isMesh) {
